@@ -96,7 +96,7 @@ p.logo-title > span {
 .hero-container {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: start;
   justify-content: center;
   width: 45%;
 }
@@ -136,10 +136,37 @@ div.hero-container > button {
 }
 
 .stickers {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
+  margin-left: var(--margin-side-walls);
+  margin-right: var(--margin-side-walls);
 }
 
+.stickers-container {
+  display: grid;
+  gap: 1.5rem;
+  row-gap: 3rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+}
 
+.shrink {
+  width: 70%;
+  transition: 1s;
+}
+
+.grow {
+  margin: 4rem;
+  transition: 1s;
+}
+
+.one-sticker-container {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 5rem;
+  transition: 1s;
+  background: linear-gradient(180deg, #78C1F3 0%, #9BE8D8 100%);
+}
 
