@@ -1,0 +1,145 @@
+:root {
+  --bg-clr: #2b2730;
+  --bright-font-clr: #fff;
+  --dark-font-clr: #000;
+  --margin-side-walls: 2.5rem;
+  --linear-gradient-light-bleu: linear-gradient(180deg, #78c1f3 0%, #9be8d8 100%);
+}
+
+* {
+  font-family: "Titillium Web", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+
+  background-color: var(--bg-clr);
+}
+
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  height: 6rem;
+  margin-top: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--linear-gradient-light-bleu);
+  box-shadow: -0.625rem 1.5625rem 2.1875rem 1.25rem rgba(0, 0, 0, 0.25);
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 25% 0 2.5rem;
+}
+
+.logo-title {
+  color: var(--bright-font-clr);
+  font-size: 2.1875rem;
+  line-height: 2.375rem;
+}
+
+p.logo-title > span {
+  color: var(--dark-font-clr);
+}
+
+.nav-logo-img {
+  flex-shrink: 0;
+}
+
+.nav-buttons {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nv-btn {
+  color: var(--bright-font-clr);
+  line-height: 2.375rem;
+  font-size: 1.4375rem;
+
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.categories-button, .language-button {
+  color: var(--dark-font-clr);
+}
+
+.categories-button {
+  padding: 0.5rem 0.75rem;
+  border-radius: 1.25rem;
+  background: #9BE8D8;
+}
+
+.hero {
+  margin-top: var(--margin-side-walls);
+  padding-left: var(--margin-side-walls);
+  padding-right: var(--margin-side-walls);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  width: 45%;
+}
+
+.main-header {
+  font-size: 3.4375rem;
+  line-height: 4.0625rem;
+  background: linear-gradient(to bottom right, #78C1F3 0%, #9BE8D8 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #78C1F3 0%, #9BE8D8 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #78C1F3 0%, #9BE8D8 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #78C1F3 0%, #9BE8D8 50%) top right / 50% 50% no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h1.main-header > span {
+  -webkit-text-fill-color: var(--bright-font-clr);
+}
+
+div.hero-container > p {
+  color: var(--bright-font-clr);
+  font-size: 1.5rem;
+  line-height: 2.9375;
+  width: 80%;
+  margin: 0;
+}
+
+div.hero-container > button {
+  color: var(--dark-font-clr);
+  font-size: 1.4375rem;
+  line-height: 2.375rem;
+  border: none;
+  outline: none;
+
+  width: 20%;
+
+  border-radius: 1.25rem;
+  background: var(--linear-gradient-light-bleu);
+}
+
+.stickers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+
+
