@@ -37,6 +37,8 @@ body {
 
   background: var(--linear-gradient-light-bleu);
   box-shadow: -0.625rem 1.5625rem 2.1875rem 1.25rem rgba(0, 0, 0, 0.25);
+
+  z-index: 1;
 }
 
 .logo-container {
@@ -364,8 +366,8 @@ section.socialmedia-and-email > div > h3{
 
 .mail-box-container > button {
   position: absolute;
-  margin-top: 4px;
-  right: 11.5%;
+  margin-top: .25rem;
+  right: 11vw;
   height: 50px;
   width: 140px;
 
@@ -373,11 +375,13 @@ section.socialmedia-and-email > div > h3{
   outline: none;
   border: none;
 
-  font-size: 20px;
-  line-height: 38px;
+  font-size: 1.25rem;
+  line-height: 2.375rem;
   color: var(--bright-font-clr);
 
   background: var(--linear-gradient-light-bleu);
+
+  z-index: 0;
 }
 
 .footer {
