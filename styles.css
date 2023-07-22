@@ -379,3 +379,89 @@ section.socialmedia-and-email > div > h3{
 
   background: var(--linear-gradient-light-bleu);
 }
+
+.footer {
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(287deg, #9BE8D8 0%, #78C1F3 100%);
+}
+
+.footer-container {
+  padding-top: 2.5rem;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-right-container {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+
+}
+
+.footer-logo-container {
+  display: flex;
+  width: 8rem;
+  justify-content: center;
+  align-items: center;
+}
+
+div.footer-right-container > p {
+  color: var(--bright-font-clr);
+  font-size: 1.5625rem;
+  line-height: 2.385rem;
+}
+
+.footer-info-container {
+  display: grid;
+  grid-template-rows: 5rem repeat(4, 4rem);
+  grid-template-columns: repeat(3, 13rem);
+  align-items: center;
+
+  margin-left: 5rem;
+}
+
+div.footer-info-container > button {
+  background: transparent;
+  outline: none;
+  border: none;
+
+  color: var(--bright-font-clr);
+  text-align: left;
+  font-size: 1.5625rem;
+  line-height: 2.385rem;
+}
+
+button.legals ~ button {
+  font-size: 1.2rem;
+}
+
+.footer-icons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.footer-icons-container > img {
+  margin-bottom: 2rem;
+}
+
+section.footer > h4 {
+  margin-top: 0;
+  padding-top: 5rem;
+
+  color: var(--bright-font-clr);
+
+  font-size: 1.5625rem;
+  line-height: 2.385rem;
+}
