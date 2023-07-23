@@ -13,7 +13,11 @@
 * {
   font-family: "Titillium Web", sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
+}
+
+section.hero ~ section{
+  padding-top: 48px;
 }
 
 body {
@@ -28,7 +32,7 @@ body {
 .nav-bar {
   position: fixed;
   width: 100%;
-  height: 6rem;
+  height: 96px;
   margin-top: 0;
 
   display: flex;
@@ -74,10 +78,21 @@ p.logo-title > span {
   color: var(--bright-font-clr);
   line-height: 2.375rem;
   font-size: 1.4375rem;
+  text-decoration: none;
 
   outline: none;
   border: none;
   background: transparent;
+}
+
+.nv-btn:hover {
+  opacity: 0.5;
+  color:var(--dark-font-clr);
+  transition-duration: 0.3s;
+}
+
+.active {
+  color:rgba(0, 0, 0, 0.25);
 }
 
 .categories-button,
@@ -452,7 +467,7 @@ section.socialmedia-and-email > div > h3{
   align-items: center;
 }
 
-.footer-right-container {
+.footer-left-container {
   width: 35%;
   display: flex;
   flex-direction: column;
@@ -465,9 +480,10 @@ section.socialmedia-and-email > div > h3{
   width: 8rem;
   justify-content: center;
   align-items: center;
+  margin-right: auto;
 }
 
-div.footer-right-container > p {
+div.footer-left-container > p {
   color: var(--bright-font-clr);
   font-size: 1.5625rem;
   line-height: 2.385rem;

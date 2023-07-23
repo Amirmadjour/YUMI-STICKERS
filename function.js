@@ -22,3 +22,25 @@ right_btn.addEventListener("click", () =>
   card[card_number].classList.add("grow");
   localStorage.setItem("img_num", JSON.stringify(card_number));
 })
+
+const sections = document.querySelectorAll('section')
+const nav_links = document.querySelectorAll('.nv-btn')
+
+window.onscroll = () => {
+  sections.forEach(sec => {
+    let top = window.scrollY;
+    let offset = sec.offsetTop;
+    let height = sec.offsetHeight;
+    let id = sec.getAttribute("id");
+
+    if(top >= offset && top < offset + height) {
+      for(let i = 0; i < nav_links.length; i++) {
+        if (nav_links[i].getAttribute("href") === "#" + id) {
+          nav_links[i].classList.add('active');
+        } else {
+          nav_links[i].classList.remove('active');
+        }
+      }
+    }
+  })
+}
