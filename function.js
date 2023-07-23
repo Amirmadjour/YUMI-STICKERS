@@ -9,23 +9,16 @@ let right_btn = document.querySelector('.right-switcher');
 
 left_btn.addEventListener("click", () =>
 {
-    if(card_number > 0){
-        card[card_number].classList.remove("grow");
-        card_number = card_number === 0 ? 2 : card_number - 1;
-        card[card_number].classList.add("grow");
-        localStorage.setItem("card_num", JSON.stringify(card_number));
-
-    }
-   
+  card[card_number].classList.remove("grow");
+  card_number = card_number === 0 ? 7 : card_number - 1;
+  card[card_number].classList.add("grow");
+  localStorage.setItem("img_num", JSON.stringify(card_number));
 })
 
 right_btn.addEventListener("click", () =>
 {
-    if(card_number < 7) {
-      card[card_number].classList.remove("grow");
-      card_number = (card_number + 1) % 8;
-      card[card_number].classList.add("grow");
-      localStorage.setItem("card_num", JSON.stringify(card_number));
-    }
-
+  card[card_number].classList.remove("grow");
+  card_number = (card_number + 1) % 8;
+  card[card_number].classList.add("grow");
+  localStorage.setItem("img_num", JSON.stringify(card_number));
 })

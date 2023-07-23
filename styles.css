@@ -244,11 +244,21 @@ section.stickers > button > svg {
   object-fit: cover;
   position: absolute;
   object-position: center center;
+  overflow: hidden;
+}
+
+.right-switcher,
+.left-switcher {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
 }
 
 .grow {
   height: 500px;
-  transition: 1s;
   z-index: 1;
 }
 
@@ -447,8 +457,7 @@ section.socialmedia-and-email > div > h3{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
-
+  align-items: center;
 }
 
 .footer-logo-container {
