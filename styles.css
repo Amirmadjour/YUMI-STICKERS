@@ -38,7 +38,7 @@ body {
   background: var(--linear-gradient-light-bleu);
   box-shadow: -0.625rem 1.5625rem 2.1875rem 1.25rem rgba(0, 0, 0, 0.25);
 
-  z-index: 1;
+  z-index: 2;
 }
 
 .logo-container {
@@ -233,17 +233,57 @@ section.stickers > button > svg {
 .bookmarks-img-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
+  height: 462px;
+  width: 1000px;
 
   margin: auto 2.5rem;
 }
 
 .bookmarks-img-container > img {
-  width: 20vmin;
-  height: 56vmin;
   object-fit: cover;
+  position: absolute;
   object-position: center center;
 }
+
+.grow {
+  height: 500px;
+  transition: 1s;
+  z-index: 1;
+}
+
+.bookmarks-img-container img:nth-child(1){
+  transform: translateX(-350px);
+}
+
+.bookmarks-img-container img:nth-child(2){
+  transform: translateX(-250px);
+}
+
+.bookmarks-img-container img:nth-child(3){
+  transform: translateX(-150px);
+}
+
+.bookmarks-img-container img:nth-child(4){
+  transform: translateX(-50px);
+}
+
+.bookmarks-img-container img:nth-child(5){
+  transform: translateX(50px);
+}
+
+.bookmarks-img-container img:nth-child(6){
+  transform: translateX(150px);
+}
+
+.bookmarks-img-container img:nth-child(7){
+  transform: translateX(250px);
+}
+
+.bookmarks-img-container img:nth-child(8){
+  transform: translateX(350px);
+}
+
 
 .polaroid {
   display: flex;
