@@ -1,26 +1,38 @@
-let card_number = JSON.parse(localStorage.getItem("img_num"));
-let card = document.querySelectorAll('.bookmark-img');
+let image_number = JSON.parse(localStorage.getItem("img_num"));
+let img = document.querySelectorAll('.bookmark-img');
 
-card_number === null && (card_number = 0);  
-card[card_number].classList.add("grow");
+image_number === null && (image_number
+ = 0);  
+img[image_number].classList.add("grow");
 
 let left_btn = document.querySelector('.left-switcher');
 let right_btn = document.querySelector('.right-switcher');
 
 left_btn.addEventListener("click", () =>
 {
-  card[card_number].classList.remove("grow");
-  card_number = card_number === 0 ? 7 : card_number - 1;
-  card[card_number].classList.add("grow");
-  localStorage.setItem("img_num", JSON.stringify(card_number));
+  img[image_number
+].classList.remove("grow");
+  image_number
+ = image_number
+ === 0 ? 7 : image_number
+ - 1;
+  img[image_number
+].classList.add("grow");
+  localStorage.setItem("img_num", JSON.stringify(image_number
+  ));
 })
 
 right_btn.addEventListener("click", () =>
 {
-  card[card_number].classList.remove("grow");
-  card_number = (card_number + 1) % 8;
-  card[card_number].classList.add("grow");
-  localStorage.setItem("img_num", JSON.stringify(card_number));
+  img[image_number
+].classList.remove("grow");
+  image_number
+ = (image_number
+   + 1) % 8;
+  img[image_number
+].classList.add("grow");
+  localStorage.setItem("img_num", JSON.stringify(image_number
+  ));
 })
 
 const sections = document.querySelectorAll('section')

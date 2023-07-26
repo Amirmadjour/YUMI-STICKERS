@@ -16,8 +16,8 @@
   font-weight: 500;
 }
 
-section.hero ~ section{
-  padding-top: 48px;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -27,6 +27,10 @@ body {
   flex-direction: column;
 
   background-color: var(--bg-clr);
+}
+
+section.hero ~ section{
+  padding-top: 48px;
 }
 
 .nav-bar {
