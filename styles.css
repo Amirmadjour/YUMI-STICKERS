@@ -25,6 +25,7 @@ body {
   margin: 0;
   padding: 0;
   flex-direction: column;
+  align-items: center;
 
   background-color: var(--bg-clr);
 }
@@ -47,6 +48,20 @@ section.hero ~ section{
   box-shadow: -0.625rem 1.5625rem 2.1875rem 1.25rem rgba(0, 0, 0, 0.25);
 
   z-index: 2;
+}
+
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+div.nav-container > svg {
+  display: none;
 }
 
 .logo-container {
@@ -111,9 +126,9 @@ p.logo-title > span {
 }
 
 .hero {
-  margin-top: var(--margin-side-walls);
-  padding-left: var(--margin-side-walls);
-  padding-right: var(--margin-side-walls);
+  width: 100%;
+  margin-top: 10px;
+
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -150,7 +165,7 @@ h1.main-header > span {
 div.hero-container > p {
   color: var(--bright-font-clr);
   font-size: 1.5rem;
-  line-height: 2.9375;
+  line-height: 2.9375rem;
   width: 80%;
   margin: 0;
 }
@@ -537,4 +552,93 @@ section.footer > h4 {
 
   font-size: 1.5625rem;
   line-height: 2.385rem;
+}
+
+/* 2xl */
+@media (max-width: 1536px) {
+  .nav-container,
+  section {
+    max-width: 1280px;
+  }
+
+  .nv-btn {
+    line-height: 2.125rem;
+    font-size: 1.25rem;
+  }
+
+  .logo-container {
+    margin-right: 6rem;
+  }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .nav-container,
+  section {
+    max-width: 1024px;
+  }
+
+  .nv-btn {
+    line-height: 2rem;
+    font-size: 1rem;
+  }
+
+  .logo-container {
+    margin-right: 0.5rem;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .nav-container,
+  section {
+    max-width: 768px;
+
+    justify-content: space-between;
+  }
+
+  .nav-buttons {
+    display: none;
+  }
+
+  .logo-container {
+    width: 140px;
+  }
+
+  .logo-title {
+    font-size: 1.75rem;
+    line-height: 1.875rem;
+  }
+
+  div.nav-container > svg {
+    display: inline-block;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .nav-container,
+  section {
+    max-width: 640px;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .nav-container,
+  section {
+    max-width: 475px;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .nav-container, 
+  section {
+    max-width: 100%;
+  }
 }

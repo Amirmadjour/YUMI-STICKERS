@@ -16,45 +16,79 @@
 
   <body>
     <nav class="nav-bar">
-      <div class="logo-container">
-        <img
-          class="nav-logo-img"
-          src="public/images/logo.png"
-          alt="An image of a panda"
-        />
-        <p class="logo-title">YUMI <span>STICKERS</span></p>
+      <div class="nav-container">
+        <div class="logo-container">
+          <img
+            class="nav-logo-img"
+            src="public/images/logo.png"
+            alt="An image of a panda"
+          />
+          <p class="logo-title">YUMI <span>STICKERS</span></p>
+        </div>
+        <ul class="nav-buttons">
+          <li>
+            <a href="#hero" class="active nv-btn home">HOME</a>
+          </li>
+          <li><a href="#stickers" class="nv-btn">STICKERS</a></li>
+          <li><a href="#bookmarks" class="nv-btn">BOOKMARKS</a></li>
+          <li><a href="#polaroid" class="nv-btn">POLAROID</a></li>
+          <li><button class="nv-btn categories-button">CATEGORIES</button></li>
+          <li>
+            <div class="language-switcher-container">
+              <button class="nv-btn language-button">EN</button>
+              <img
+                class="arrow-down"
+                src="public/images/arrow-down.png"
+                alt="An image of an arrow down to switch the language displayed"
+              />
+            </div>
+          </li>
+        </ul>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="34"
+          height="18"
+          viewBox="0 0 34 18"
+          fill="none"
+        >
+          <path
+            d="M3.5 9H21.5"
+            stroke="#2B2730"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+          <path
+            d="M26 9L30 9"
+            stroke="#2B2730"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+          <path
+            d="M2 2H29.5"
+            stroke="#2B2730"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+          <path
+            d="M5 16H32.5"
+            stroke="#2B2730"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+        </svg>
       </div>
-      <ul class="nav-buttons">
-        <li>
-          <a href="#hero" class="active nv-btn home">HOME</a>
-        </li>
-        <li><a href="#stickers" class="nv-btn">STICKERS</a></li>
-        <li><a href="#bookmarks" class="nv-btn">BOOKMARKS</a></li>
-        <li><a href="#polaroid" class="nv-btn">POLAROID</a></li>
-        <li><button class="nv-btn categories-button">CATEGORIES</button></li>
-        <li>
-          <div class="language-switcher-container">
-            <button class="nv-btn language-button">EN</button>
-            <img
-              class="arrow-down"
-              src="public/images/arrow-down.png"
-              alt="An image of an arrow down to switch the language displayed"
-            />
-          </div>
-        </li>
-      </ul>
     </nav>
 
     <section class="hero" id="hero">
-      <div class="hero-container">
+      <div class="hero-container" id="herocontainer">
         <h1 class="main-header">
           YUMI STICKERS<span> MAKES THE BEST STICKERS FOR YOU </span>
         </h1>
-        <p>
+        <p id="hero-description">
           YUMI STICKERS OFFER STICKERS , BOOKMARKS , PALAROID IN DIFFERENT
           CATEGORIES.
         </p>
-        <p>ALSO YOU CAN ORDER FOR ANY THING YOU WANT</p>
+        <p id="hero-description">ALSO YOU CAN ORDER FOR ANY THING YOU WANT</p>
         <button>ORDER</button>
       </div>
 
@@ -323,7 +357,7 @@
       </div>
     </section>
 
-    <section class="socialmedia-and-email" >
+    <section class="socialmedia-and-email">
       <div class="socialmedia-container">
         <h3>OUR SOCIAL MEDIA</h3>
         <div class="icons-container">

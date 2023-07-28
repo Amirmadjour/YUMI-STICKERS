@@ -56,3 +56,11 @@ window.onscroll = () => {
     }
   })
 }
+
+const main_header_description = herocontainer.querySelectorAll("p");
+
+if(window.innerWidth < 1024) {
+  main_header_description.remove();
+
+  console.log("this should worked!!");
+}
