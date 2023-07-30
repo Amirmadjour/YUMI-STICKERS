@@ -50,11 +50,13 @@ function removenonresponsivesections() {
   const email = document.getElementById("email");
   const footer = document.getElementById("footer");
 
-  stickers.remove();
-  bookmarks.remove();
-  polaroids.remove();
-  email.remove();
-  footer.remove();
+  if(window.innerWidth < 1024) {
+    stickers.remove();
+    bookmarks.remove();
+    polaroids.remove();
+    email.remove();
+    footer.remove();
+  }
 }
 
 function replaceherodescription() {
