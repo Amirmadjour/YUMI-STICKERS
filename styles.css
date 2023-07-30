@@ -649,6 +649,7 @@ section.footer > h4 {
 
   div.nav-container > svg {
     display: inline-block;
+    margin-right: 2.5rem;
   }
 
   .hero {
