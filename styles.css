@@ -191,16 +191,17 @@ section.hero > svg {
 }
 
 .stickers {
+  width: 100%;
   display: flex;
   flex-direction: column;
+
   align-items: center;
   justify-content: center;
-  margin-left: var(--margin-side-walls);
-  margin-right: var(--margin-side-walls);
 }
 
 .stickers-container {
   display: grid;
+  width: 100%;
   gap: 1.5rem;
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
@@ -587,6 +588,11 @@ section.footer > h4 {
     font-size: 1.25rem;
     line-height: 2.25rem;
   }
+
+  .stickers-container {
+    width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* xl */
@@ -619,6 +625,11 @@ section.footer > h4 {
   section.hero > img {
     height: 600px;
   }
+
+  .stickers-container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 75%;
+  }
 }
 
 /* lg */
@@ -649,7 +660,7 @@ section.footer > h4 {
 
   div.nav-container > svg {
     display: inline-block;
-    margin-right: 2.5rem;
+    margin-right: 1.5rem;
   }
 
   .hero {
@@ -690,6 +701,14 @@ section.footer > h4 {
     top: 815px;
     right: 37.5%;
   }
+
+  .stickers-container {
+    width: 100%;
+  }
+
+  #stop-point-for-mobile ~ div {
+    display: none;
+  }
 }
 
 /* md */
@@ -717,6 +736,10 @@ section.footer > h4 {
   section.hero > svg {
     top: 700px;
     right: 35%;
+  }
+
+  .stickers-container {
+    grid-template-columns: 1fr;
   }
 }
 

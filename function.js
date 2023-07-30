@@ -44,14 +44,12 @@ window.onscroll = () => {
 };
 
 function removenonresponsivesections() {
-  const stickers = document.getElementById("stickers");
   const bookmarks = document.getElementById("bookmarks");
   const polaroids = document.getElementById("polaroid");
   const email = document.getElementById("email");
   const footer = document.getElementById("footer");
 
   if(window.innerWidth < 1024) {
-    stickers.remove();
     bookmarks.remove();
     polaroids.remove();
     email.remove();
