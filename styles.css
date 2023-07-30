@@ -186,6 +186,10 @@ h1.main-header > span {
   background: var(--linear-gradient-light-bleu);
 }
 
+section.hero > svg {
+  display: none;
+}
+
 .stickers {
   display: flex;
   flex-direction: column;
@@ -671,6 +675,20 @@ section.footer > h4 {
     text-align: center;
   }
 
+  #hero-description-2 {
+    color: rgba(255, 255, 255, 0.64);
+  }
+
+  #hero-order-btn {
+    margin-bottom: 20px;
+  }
+  
+  section.hero > svg {
+    display: inline-block;
+    position: absolute;
+    top: 815px;
+    right: 37.5%;
+  }
 }
 
 /* md */
@@ -694,6 +712,11 @@ section.footer > h4 {
     font-size: 0.825rem;
     line-height: 1.75rem;
   }
+
+  section.hero > svg {
+    top: 700px;
+    right: 35%;
+  }
 }
 
 /* sm */
@@ -712,6 +735,11 @@ section.footer > h4 {
   #hero-description-2 {
     font-size: 0.625rem;
     line-height: 1.4325rem;
+  }
+
+  section.hero > svg {
+    top: 670px;
+    right: 31.5%;
   }
 }
 

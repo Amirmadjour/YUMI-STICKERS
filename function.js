@@ -43,6 +43,20 @@ window.onscroll = () => {
   });
 };
 
+function removenonresponsivesections() {
+  const stickers = document.getElementById("stickers");
+  const bookmarks = document.getElementById("bookmarks");
+  const polaroids = document.getElementById("polaroid");
+  const email = document.getElementById("email");
+  const footer = document.getElementById("footer");
+
+  stickers.remove();
+  bookmarks.remove();
+  polaroids.remove();
+  email.remove();
+  footer.remove();
+}
+
 function replaceherodescription() {
 
   const main_header_description_1 = document.getElementById("hero-description-1");
@@ -53,8 +67,8 @@ function replaceherodescription() {
 
   if (window.innerWidth < 1024) {
     hero.appendChild(main_header_description_1);
-    hero.appendChild(main_header_description_2);
     hero.appendChild(hero_btn);
+    hero.appendChild(main_header_description_2);
     console.log("This should work!!");
   }
   else {
@@ -65,5 +79,6 @@ function replaceherodescription() {
 }
 
 replaceherodescription();
+removenonresponsivesections();
 
 window.addEventListener("resize", replaceherodescription);
