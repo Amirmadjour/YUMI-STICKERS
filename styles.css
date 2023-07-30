@@ -162,7 +162,8 @@ h1.main-header > span {
   -webkit-text-fill-color: var(--bright-font-clr);
 }
 
-div.hero-container > p {
+#hero-description-1,
+#hero-description-2 {
   color: var(--bright-font-clr);
   font-size: 1.5rem;
   line-height: 2.9375rem;
@@ -170,14 +171,16 @@ div.hero-container > p {
   margin: 0;
 }
 
-div.hero-container > button {
+#hero-order-btn {
   color: var(--dark-font-clr);
   font-size: 1.4375rem;
   line-height: 2.375rem;
   border: none;
   outline: none;
 
-  width: 20%;
+  margin-top: 20px;
+  width: 7.5rem;
+
 
   border-radius: 1.25rem;
   background: var(--linear-gradient-light-bleu);
@@ -569,6 +572,17 @@ section.footer > h4 {
   .logo-container {
     margin-right: 6rem;
   }
+
+  .main-header {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  #hero-description-1,
+  #hero-description-2 {
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+  }
 }
 
 /* xl */
@@ -586,6 +600,21 @@ section.footer > h4 {
   .logo-container {
     margin-right: 0.5rem;
   }
+
+  .main-header {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+
+  #hero-description-1,
+  #hero-description-2 {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  section.hero > img {
+    height: 600px;
+  }
 }
 
 /* lg */
@@ -595,6 +624,10 @@ section.footer > h4 {
     max-width: 768px;
 
     justify-content: space-between;
+  }
+
+  .hero {
+    margin-top: 150px;
   }
 
   .nav-buttons {
@@ -617,6 +650,27 @@ section.footer > h4 {
   .hero {
     flex-direction: column;
   }
+
+  .hero-container {
+    width: 80%;
+  }
+
+  .main-header {
+    text-align: center;
+    font-size: 2.75rem;
+    line-height: 3.25rem;
+    margin-bottom: 0;
+  }
+
+  section.hero > img {
+    height: 450px;
+  }
+
+  #hero-description-1,
+  #hero-description-2 {
+    text-align: center;
+  }
+
 }
 
 /* md */
@@ -625,6 +679,21 @@ section.footer > h4 {
   section {
     max-width: 640px;
   }
+
+  .main-header {
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+  }
+
+  section.hero > img {
+    height: 375px;
+  }
+
+  #hero-description-1, 
+  #hero-description-2 {
+    font-size: 0.825rem;
+    line-height: 1.75rem;
+  }
 }
 
 /* sm */
@@ -632,6 +701,17 @@ section.footer > h4 {
   .nav-container,
   section {
     max-width: 475px;
+  }
+
+  .main-header {
+    font-size: 1.75rem;
+    line-height: 2.125rem;
+  }
+
+  #hero-description-1,
+  #hero-description-2 {
+    font-size: 0.625rem;
+    line-height: 1.4325rem;
   }
 }
 
