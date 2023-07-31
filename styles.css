@@ -739,7 +739,18 @@ section.footer > h4 {
   }
 
   .stickers-container {
-    grid-template-columns: 1fr;
+    width: 70%;
+  }
+
+  .one-sticker-container {
+    height: 200px;
+    width: 200px;
+
+    border-radius: 50px;
+  }
+  
+  .sticker {
+    height: 200px;
   }
 }
 
@@ -765,6 +776,10 @@ section.footer > h4 {
     top: 670px;
     right: 31.5%;
   }
+
+  .stickers-container {
+    width: 100%;
+  }
 }
 
 /* xs */
@@ -773,4 +788,39 @@ section.footer > h4 {
   section {
     max-width: 100%;
   }
+
+  section.hero > svg {
+    right: 25vw;
+  }
+
+  .main-header {
+    font-size: 6vw;
+  }
+
+  #hero-description-1,
+  #hero-description-2 {
+    font-size: 2vw;
+  }
+
+  div.section-title-container > h2{
+    font-size: 8.25vw;
+    margin-left: 9vw;
+    margin-right: 9vw;
+  }
+
+  div.section-title-container > svg {
+    width: 10vw;
+  }
+
+  .one-sticker-container {
+    height: 42.5vw;
+    width: 42.5vw;
+
+    border-radius: 10vw;
+  }
+
+  .sticker {
+    height: 40vw;
+  }
+
 }
