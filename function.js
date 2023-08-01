@@ -44,13 +44,12 @@ window.onscroll = () => {
 };
 
 function removenonresponsivesections() {
-  const bookmarks = document.getElementById("bookmarks");
   const polaroids = document.getElementById("polaroid");
   const email = document.getElementById("email");
   const footer = document.getElementById("footer");
+  
 
   if(window.innerWidth < 1024) {
-    bookmarks.remove();
     polaroids.remove();
     email.remove();
     footer.remove();
@@ -65,16 +64,27 @@ function replaceherodescription() {
   const hero = document.getElementById("hero");
   const hero_container = document.getElementsByClassName("hero-container");
 
+  const bookmarkssection = document.getElementById("bookmarks");
+  const morebutton = document.getElementById("more-btn");
+
   if (window.innerWidth < 1024) {
     hero.appendChild(main_header_description_1);
     hero.appendChild(hero_btn);
     hero.appendChild(main_header_description_2);
-    console.log("This should work!!");
+
+    bookmarkssection.style.paddingTop = "0px";
+    morebutton.style.marginTop = "20px";
+    morebutton.style.marginBottom = "0px";
   }
   else {
     hero_container[0].appendChild(main_header_description_1);
     hero_container[0].appendChild(main_header_description_2);
     hero_container[0].appendChild(hero_btn);
+
+
+    bookmarkssection.style.paddingTop = "48px";
+    morebutton.style.marginTop = "64px";
+    morebutton.style.marginBottom = "64px";
   }
 }
 
@@ -82,3 +92,23 @@ replaceherodescription();
 removenonresponsivesections();
 
 window.addEventListener("resize", replaceherodescription);
+
+const sticker_cards = document.getElementsByClassName("bookmark-img");
+
+if(window.innerWidth < 1024) {
+
+  const bookmark_cards = document.getElementsByClassName("bookmark-img");
+  const bookmark_container = document.getElementsByClassName("bookmarks-img-container");
+
+  for(var i = 0; i < bookmark_cards.length; i++) {
+    if(!(bookmark_cards[i].classList.contains("active-card"))) {
+      bookmark_cards[i].style.display = "none";
+    }
+    else {
+      bookmark_cards[i].style.position = "static";
+    }
+    bookmark_cards[i].style.transform = "translateX(0px)";
+  }
+
+  bookmark_container[0].style.gap = "5vw";
+}
