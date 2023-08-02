@@ -257,6 +257,8 @@ section.stickers > button > svg {
   align-items: center;
   justify-content: center;
 
+  width: 100%;
+
   margin-bottom: 10rem;
 }
 
@@ -280,7 +282,8 @@ section.stickers > button > svg {
   height: 462px;
   width: 1000px;
 
-  margin: auto 2.5rem;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .bookmarks-img-container > img {
@@ -303,38 +306,6 @@ section.stickers > button > svg {
 .grow {
   height: 500px;
   z-index: 1;
-}
-
-.bookmarks-img-container img:nth-child(1){
-  transform: translateX(-350px);
-}
-
-.bookmarks-img-container img:nth-child(2){
-  transform: translateX(-250px);
-}
-
-.bookmarks-img-container img:nth-child(3){
-  transform: translateX(-150px);
-}
-
-.bookmarks-img-container img:nth-child(4){
-  transform: translateX(-50px);
-}
-
-.bookmarks-img-container img:nth-child(5){
-  transform: translateX(50px);
-}
-
-.bookmarks-img-container img:nth-child(6){
-  transform: translateX(150px);
-}
-
-.bookmarks-img-container img:nth-child(7){
-  transform: translateX(250px);
-}
-
-.bookmarks-img-container img:nth-child(8){
-  transform: translateX(350px);
 }
 
 
@@ -709,6 +680,22 @@ section.footer > h4 {
 
   #stop-point-for-mobile ~ div {
     display: none;
+  }
+
+  .bookmarks-img-container{
+    width: 50vw;
+  }
+
+  .bookmark-img {
+    height: 50vw;
+  }
+
+  .bookmarks-left-arrow,
+  .bookmarks-right-arrow,
+  .left-switcher,
+  .right-switcher {
+    height: 40px;
+    width: 40px;
   }
 }
 
