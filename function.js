@@ -53,7 +53,6 @@ function bookmarkswitcher() {
       img[couple_bookmarks[1]].style.transform = "translateX(0px)";
     })
   }
-
 }
 
 const sections = document.querySelectorAll("section");
@@ -79,13 +78,11 @@ window.onscroll = () => {
 };
 
 function removenonresponsivesections() {
-  const polaroids = document.getElementById("polaroid");
   const email = document.getElementById("email");
   const footer = document.getElementById("footer");
 
 
   if(window.innerWidth < 1024) {
-    polaroids.remove();
     email.remove();
     footer.remove();
   }
@@ -132,7 +129,7 @@ function adjustbookmarkimages() {
 
   couple_bookmarks === null && (couple_bookmarks = [0, 1])
 
-  if(window.innerWidth < 1024) {
+  if(window.innerWidth <= 1024) {
 
     for(var i = 0; i < bookmark_cards.length; i++) {
       if(i != couple_bookmarks[0] && i != couple_bookmarks[1]) {

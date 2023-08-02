@@ -257,8 +257,6 @@ section.stickers > button > svg {
   align-items: center;
   justify-content: center;
 
-  width: 100%;
-
   margin-bottom: 10rem;
 }
 
@@ -301,6 +299,10 @@ section.stickers > button > svg {
   border: none;
   outline: none;
   background: transparent;
+}
+
+.left-switcher {
+  margin-right: 20px;
 }
 
 .grow {
@@ -565,6 +567,11 @@ section.footer > h4 {
     width: 90%;
     grid-template-columns: repeat(3, 1fr);
   }
+
+  div.polaroid-left-container > p {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
 }
 
 /* xl */
@@ -601,6 +608,22 @@ section.footer > h4 {
   .stickers-container {
     grid-template-columns: repeat(2, 1fr);
     width: 75%;
+  }
+
+  div.polaroid-left-container > p {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  div.polaroid-camera-logo-container > p {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+
+    width: 80%;
+  }
+
+  div.polaroid-right-container > img {
+    height: 400px;  
   }
 }
 
@@ -694,8 +717,22 @@ section.footer > h4 {
   .bookmarks-right-arrow,
   .left-switcher,
   .right-switcher {
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
+  }
+
+  .polaroid-container {
+    flex-direction: column;
+  }
+
+  .polaroid-left-container {
+    width: 100%;
+
+    margin-bottom: 100px;
+  }
+
+  .polaroid-right-container {
+    margin-bottom: 100px;
   }
 }
 
@@ -769,6 +806,11 @@ section.footer > h4 {
   .stickers-container {
     width: 100%;
   }
+
+  div.polaroid-right-container > img {
+    height: 300px;
+  }
+
 }
 
 /* xs */
@@ -816,4 +858,28 @@ section.footer > h4 {
     height: 40vw;
   }
 
+  div.polaroid-left-container > p {
+    font-size: 6.5vw;
+    line-height: 11vw;
+  }
+
+  .polaroid-camera-logo-container {
+    height: 65vw;
+    width: 65vw;
+  }
+
+  .polaroid-camera-logo-container > img {
+    height: 38vw;
+  }
+
+  div.polaroid-camera-logo-container > p {
+    font-size: 6vw;
+    line-height: 6vw;
+    width: 50vw;
+  }
+
+  div.polaroid-right-container > img {
+    height: 62.5vw;
+    box-shadow: 8vw 8vw #9BE8D8, 8vw -8vw #9BE8D8;
+  }
 }
