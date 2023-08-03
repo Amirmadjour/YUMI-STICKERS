@@ -77,17 +77,6 @@ window.onscroll = () => {
   });
 };
 
-function removenonresponsivesections() {
-  const email = document.getElementById("email");
-  const footer = document.getElementById("footer");
-
-
-  if(window.innerWidth < 1024) {
-    email.remove();
-    footer.remove();
-  }
-}
-
 function replaceherodescription() {
 
   const main_header_description_1 = document.getElementById("hero-description-1");
@@ -156,8 +145,19 @@ function adjustbookmarkimages() {
   }
 }
 
+function adjustfooterandemailsections () {
+  const our_social_media = document.getElementById("our-social-media");
+  const footer_icons_container = document.getElementsByClassName("footer-icons-container");
+
+  if(window.innerWidth < 1024) {
+    our_social_media.remove();
+    footer_icons_container[0].remove();
+  }
+}
+
+adjustfooterandemailsections();
 replaceherodescription();
-removenonresponsivesections();
 bookmarkswitcher();
 window.addEventListener("resize", bookmarkswitcher);
 window.addEventListener("resize", replaceherodescription);
+window.addEventListener("resize", adjustfooterandemailsections);

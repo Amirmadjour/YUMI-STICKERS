@@ -30,7 +30,7 @@ body {
   background-color: var(--bg-clr);
 }
 
-section.hero ~ section{
+.stickers, .bookmarks, .polaroid, .footer{
   padding-top: 48px;
 }
 
@@ -373,13 +373,23 @@ div.polaroid-left-container > p {
 }
 
 .socialmedia-and-email {
+  position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
-  height: 6rem;
-  margin-bottom: 10vh;
+  height: 100px;
+  margin-bottom: 100px;
+}
+
+.socialmedia-section-bg{
+  position: absolute;
+  height: 100px;
+  width: 100vw;
   background: var(--linear-gradient-light-bleu);
+  bottom: 0;
+
+  z-index: -1;
 }
 
 .socialmedia-container {
@@ -388,7 +398,6 @@ div.polaroid-left-container > p {
   justify-content: center;
   align-content: center;
   margin-right: 5%;
-  margin-left: 0;
 }
 
 section.socialmedia-and-email > div > h3{
@@ -420,8 +429,14 @@ section.socialmedia-and-email > div > h3{
   justify-content: center;
 }
 
+.mail-box-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
 .mail-text {
-  width: 30.5em;
+  width: 500px;
   height: 58px;
   border-radius: 12.5em;
   outline: none;
@@ -432,8 +447,7 @@ section.socialmedia-and-email > div > h3{
 
 .mail-box-container > button {
   position: absolute;
-  margin-top: .25rem;
-  right: 11vw;
+  right: 8px;
   height: 50px;
   width: 140px;
 
@@ -446,18 +460,27 @@ section.socialmedia-and-email > div > h3{
   color: var(--bright-font-clr);
 
   background: var(--linear-gradient-light-bleu);
-
-  z-index: 0;
 }
 
 .footer {
-  height: 75vh;
+  height: 550px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  position: relative;
+}
+
+.footer-bg {
+  position: absolute;
+  bottom: 0;
+  width: 100svw;
+  height: 600px;
+
   background: linear-gradient(287deg, #9BE8D8 0%, #78C1F3 100%);
+  z-index: -1;
 }
 
 .footer-container {
@@ -519,7 +542,7 @@ button.legals ~ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: 300px;
 }
 
 .footer-icons-container > img {
@@ -528,7 +551,6 @@ button.legals ~ button {
 
 section.footer > h4 {
   margin-top: 0;
-  padding-top: 5rem;
 
   color: var(--bright-font-clr);
 
@@ -624,6 +646,18 @@ section.footer > h4 {
 
   div.polaroid-right-container > img {
     height: 400px;  
+  }
+
+  section.socialmedia-and-email > div > h3 {
+    width: 200px;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+  }
+
+  div.footer-left-container > p {
+    font-size: 1rem;
+    line-height: 1.75rem;
   }
 }
 
