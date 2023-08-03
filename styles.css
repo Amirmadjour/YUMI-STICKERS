@@ -254,8 +254,8 @@ section.stickers > button > svg {
 
 .bookmarks-container {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 
   margin-bottom: 10rem;
 }
@@ -299,10 +299,6 @@ section.stickers > button > svg {
   border: none;
   outline: none;
   background: transparent;
-}
-
-.left-switcher {
-  margin-right: 20px;
 }
 
 .grow {
@@ -740,8 +736,13 @@ section.footer > h4 {
     display: none;
   }
 
+  .bookmarks {
+    height: 100vw;
+  }
+
   .bookmarks-img-container{
     width: 50vw;
+    height: 60vw;
   }
 
   .bookmark-img {
@@ -927,6 +928,11 @@ section.footer > h4 {
 
 /* xs */
 @media (max-width: 475px) {
+
+  section {
+    padding-top: 0;
+  }
+
   .nav-container, 
   section {
     max-width: 100%;
@@ -972,6 +978,10 @@ section.footer > h4 {
 
   .sticker {
     height: 40vw;
+  }
+
+  .polaroid {
+    padding-top: 0;
   }
 
   div.polaroid-left-container > p {
