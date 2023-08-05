@@ -150,14 +150,16 @@ function adjustfooterandemailsections () {
   const footer_icons_container = document.getElementsByClassName("footer-icons-container");
 
   if(window.innerWidth < 1024) {
-    our_social_media.remove();
-    footer_icons_container[0].remove();
+    if(our_social_media !== null && our_social_media !== undefined && footer_icons_container[0] !== null && footer_icons_container[0] !== undefined) {
+      our_social_media.remove();
+      footer_icons_container[0].remove();
+    }
   }
 }
 
 adjustfooterandemailsections();
 replaceherodescription();
 bookmarkswitcher();
+adjustfooterandemailsections();
 window.addEventListener("resize", bookmarkswitcher);
 window.addEventListener("resize", replaceherodescription);
-window.addEventListener("resize", adjustfooterandemailsections);

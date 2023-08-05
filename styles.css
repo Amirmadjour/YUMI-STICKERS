@@ -190,6 +190,11 @@ section.hero > svg {
   display: none;
 }
 
+.hero-img {
+  height: auto;
+  aspect-ratio: 11 / 12;
+}
+
 .stickers {
   width: 100%;
   display: flex;
@@ -380,7 +385,7 @@ div.polaroid-left-container > p {
 
 .socialmedia-section-bg{
   position: absolute;
-  height: 200px;
+  height: 100px;
   width: 100vw;
   background: var(--linear-gradient-light-bleu);
   bottom: 0;
@@ -667,8 +672,12 @@ section.footer > h4 {
     justify-content: space-between;
   }
 
+  .nav-bar {
+    position: static;
+  }
+
   .hero {
-    margin-top: 150px;
+    margin-top: 50px;
   }
 
   .nav-buttons {
@@ -775,6 +784,10 @@ section.footer > h4 {
     height: 200px;
     margin-bottom: 0;
     flex-direction: column;
+  }
+
+  .socialmedia-section-bg {
+    height: 200px;
   }
 
   .socialmedia-container {
@@ -957,10 +970,11 @@ section.footer > h4 {
 
   .hero-img {
     width: 90vw;
+    aspect-ratio: 11 / 12;
   }
 
   div.section-title-container > h2{
-    font-size: 8.25vw;
+    font-size: 7vw;
     margin-left: 9vw;
     margin-right: 9vw;
   }
